@@ -1,0 +1,112 @@
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    background-color: thistle;
+    /*     animation-name: Positions;
+    animation-duration: 5s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear; */
+    animation: Positions 5s linear 0.5s infinite alternate-reverse;
+}
+
+@keyframes animationColor {
+    from {
+        background-color: thistle;
+        width: 100px;
+        height: 100px;
+    }
+    to {
+        background-color: violet;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@keyframes Sizes {
+    0% {
+        width: 100px;
+        height: 100px;
+    }
+    25% {
+        width: 150px;
+        height: 150px;
+    }
+    50% {
+        width: 175px;
+        height: 175px;
+    }
+    75% {
+        width: 200px;
+        height: 200px;
+    }
+    100% {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@keyframes MultipleChanges {
+    0% {
+        width: 100px;
+        height: 100px;
+    }
+    25% {
+        width: 150px;
+        height: 150px;
+        transform: translate(50px, 50px)
+    }
+    50% {
+        width: 175px;
+        height: 175px;
+        transform: translate(100px, 100px)
+    }
+    75% {
+        width: 200px;
+        height: 200px;
+        transform: translate(150px, 150px)
+    }
+    100% {
+        width: 250px;
+        height: 250px;
+        transform: translate(200px, 200px)
+    }
+}
+
+@keyframes Positions {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    25% {
+        width: 200px;
+        height: 200px;
+        left: 100px;
+        top: 0;
+    }
+    50% {
+        width: 300px;
+        height: 300px;
+        left: 100px;
+        top: 100px;
+    }
+    75% {
+        width: 150px;
+        height: 150px;
+        left: 0;
+        top: 100px;
+    }
+    100% {
+        width: 100px;
+        height: 100px;
+        left: 0;
+        top: 0;
+    }
+}
